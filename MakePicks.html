@@ -46,7 +46,7 @@ font-size:25px;
 <h1>Kohler League - Make Picks</h1>
 <br>
 <form action='SelectionSuccess.html'>
-<p>(Would need to Require an exact selection of 5 choices, need to make games in the past read-only/unselectable)</p>
+<p>(Would need to Require an exact selection of 5 choices, need to make games in the past read-only/unselectable), need to only allow one Lock to be selected.</p>
 <p><input type='reset' value='Reset' class='button button1'>&emsp;<input type='submit' value='Submit' class='button button1'></p>
 <table>
    <tr>
@@ -64,12 +64,16 @@ font-size:25px;
             <label for='ATSAway|b6f77e9926f88eabe27f904d9097b1c6'>New Mexico State Aggies 20.5</label><br>
             <input type='radio' id='ATSHome|b6f77e9926f88eabe27f904d9097b1c6' name='ATS|b6f77e9926f88eabe27f904d9097b1c6' value='ATSHome|b6f77e9926f88eabe27f904d9097b1c6'>
             <label for='ATSHome|b6f77e9926f88eabe27f904d9097b1c6'>Jacksonville State Gamecocks -20.5</label><br>
+            <input type='checkbox' id='ATSLock|b6f77e9926f88eabe27f904d9097b1c6' name='ATSLock|b6f77e9926f88eabe27f904d9097b1c6' value='ATSLock|b6f77e9926f88eabe27f904d9097b1c6'>
+            <label for='ATSLock|b6f77e9926f88eabe27f904d9097b1c6'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|b6f77e9926f88eabe27f904d9097b1c6' name='OverUnder|b6f77e9926f88eabe27f904d9097b1c6' value='Over|b6f77e9926f88eabe27f904d9097b1c6'>
             <label for='Over|b6f77e9926f88eabe27f904d9097b1c6'>Over 59.0</label><br>
             <input type='radio' id='Under|b6f77e9926f88eabe27f904d9097b1c6' name='OverUnder|b6f77e9926f88eabe27f904d9097b1c6' value='Under|b6f77e9926f88eabe27f904d9097b1c6'>
             <label for='Under|b6f77e9926f88eabe27f904d9097b1c6'>Under 59.0</label><br>
+            <input type='checkbox' id='OverUnder|b6f77e9926f88eabe27f904d9097b1c6' name='OverUnder|b6f77e9926f88eabe27f904d9097b1c6' value='OverUnder|b6f77e9926f88eabe27f904d9097b1c6'>
+            <label for='OverUnder|b6f77e9926f88eabe27f904d9097b1c6'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -81,12 +85,16 @@ font-size:25px;
             <label for='ATSAway|1a9f221fc0145435d820b62cf0f433e0'>Coastal Carolina Chanticleers 9.5</label><br>
             <input type='radio' id='ATSHome|1a9f221fc0145435d820b62cf0f433e0' name='ATS|1a9f221fc0145435d820b62cf0f433e0' value='ATSHome|1a9f221fc0145435d820b62cf0f433e0'>
             <label for='ATSHome|1a9f221fc0145435d820b62cf0f433e0'>James Madison Dukes -9.5</label><br>
+            <input type='checkbox' id='ATSLock|1a9f221fc0145435d820b62cf0f433e0' name='ATSLock|1a9f221fc0145435d820b62cf0f433e0' value='ATSLock|1a9f221fc0145435d820b62cf0f433e0'>
+            <label for='ATSLock|1a9f221fc0145435d820b62cf0f433e0'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|1a9f221fc0145435d820b62cf0f433e0' name='OverUnder|1a9f221fc0145435d820b62cf0f433e0' value='Over|1a9f221fc0145435d820b62cf0f433e0'>
             <label for='Over|1a9f221fc0145435d820b62cf0f433e0'>Over 61.0</label><br>
             <input type='radio' id='Under|1a9f221fc0145435d820b62cf0f433e0' name='OverUnder|1a9f221fc0145435d820b62cf0f433e0' value='Under|1a9f221fc0145435d820b62cf0f433e0'>
             <label for='Under|1a9f221fc0145435d820b62cf0f433e0'>Under 61.0</label><br>
+            <input type='checkbox' id='OverUnder|1a9f221fc0145435d820b62cf0f433e0' name='OverUnder|1a9f221fc0145435d820b62cf0f433e0' value='OverUnder|1a9f221fc0145435d820b62cf0f433e0'>
+            <label for='OverUnder|1a9f221fc0145435d820b62cf0f433e0'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -98,12 +106,16 @@ font-size:25px;
             <label for='ATSAway|8491f9c56a3c55b8296c36c34a7b52d7'>Middle Tennessee Blue Raiders 5.0</label><br>
             <input type='radio' id='ATSHome|8491f9c56a3c55b8296c36c34a7b52d7' name='ATS|8491f9c56a3c55b8296c36c34a7b52d7' value='ATSHome|8491f9c56a3c55b8296c36c34a7b52d7'>
             <label for='ATSHome|8491f9c56a3c55b8296c36c34a7b52d7'>Louisiana Tech Bulldogs -5.0</label><br>
+            <input type='checkbox' id='ATSLock|8491f9c56a3c55b8296c36c34a7b52d7' name='ATSLock|8491f9c56a3c55b8296c36c34a7b52d7' value='ATSLock|8491f9c56a3c55b8296c36c34a7b52d7'>
+            <label for='ATSLock|8491f9c56a3c55b8296c36c34a7b52d7'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|8491f9c56a3c55b8296c36c34a7b52d7' name='OverUnder|8491f9c56a3c55b8296c36c34a7b52d7' value='Over|8491f9c56a3c55b8296c36c34a7b52d7'>
             <label for='Over|8491f9c56a3c55b8296c36c34a7b52d7'>Over 49.0</label><br>
             <input type='radio' id='Under|8491f9c56a3c55b8296c36c34a7b52d7' name='OverUnder|8491f9c56a3c55b8296c36c34a7b52d7' value='Under|8491f9c56a3c55b8296c36c34a7b52d7'>
             <label for='Under|8491f9c56a3c55b8296c36c34a7b52d7'>Under 49.0</label><br>
+            <input type='checkbox' id='OverUnder|8491f9c56a3c55b8296c36c34a7b52d7' name='OverUnder|8491f9c56a3c55b8296c36c34a7b52d7' value='OverUnder|8491f9c56a3c55b8296c36c34a7b52d7'>
+            <label for='OverUnder|8491f9c56a3c55b8296c36c34a7b52d7'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -115,12 +127,16 @@ font-size:25px;
             <label for='ATSAway|807eb4b33ddee38cd04cb84661cf8a54'>UTEP Miners 19.5</label><br>
             <input type='radio' id='ATSHome|807eb4b33ddee38cd04cb84661cf8a54' name='ATS|807eb4b33ddee38cd04cb84661cf8a54' value='ATSHome|807eb4b33ddee38cd04cb84661cf8a54'>
             <label for='ATSHome|807eb4b33ddee38cd04cb84661cf8a54'>Western Kentucky Hilltoppers -19.5</label><br>
+            <input type='checkbox' id='ATSLock|807eb4b33ddee38cd04cb84661cf8a54' name='ATSLock|807eb4b33ddee38cd04cb84661cf8a54' value='ATSLock|807eb4b33ddee38cd04cb84661cf8a54'>
+            <label for='ATSLock|807eb4b33ddee38cd04cb84661cf8a54'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|807eb4b33ddee38cd04cb84661cf8a54' name='OverUnder|807eb4b33ddee38cd04cb84661cf8a54' value='Over|807eb4b33ddee38cd04cb84661cf8a54'>
             <label for='Over|807eb4b33ddee38cd04cb84661cf8a54'>Over 57.5</label><br>
             <input type='radio' id='Under|807eb4b33ddee38cd04cb84661cf8a54' name='OverUnder|807eb4b33ddee38cd04cb84661cf8a54' value='Under|807eb4b33ddee38cd04cb84661cf8a54'>
             <label for='Under|807eb4b33ddee38cd04cb84661cf8a54'>Under 57.5</label><br>
+            <input type='checkbox' id='OverUnder|807eb4b33ddee38cd04cb84661cf8a54' name='OverUnder|807eb4b33ddee38cd04cb84661cf8a54' value='OverUnder|807eb4b33ddee38cd04cb84661cf8a54'>
+            <label for='OverUnder|807eb4b33ddee38cd04cb84661cf8a54'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -132,12 +148,16 @@ font-size:25px;
             <label for='ATSAway|515df05311232e8d9e27ee49c1e6a2e6'>Memphis Tigers -7.0</label><br>
             <input type='radio' id='ATSHome|515df05311232e8d9e27ee49c1e6a2e6' name='ATS|515df05311232e8d9e27ee49c1e6a2e6' value='ATSHome|515df05311232e8d9e27ee49c1e6a2e6'>
             <label for='ATSHome|515df05311232e8d9e27ee49c1e6a2e6'>South Florida Bulls 7.0</label><br>
+            <input type='checkbox' id='ATSLock|515df05311232e8d9e27ee49c1e6a2e6' name='ATSLock|515df05311232e8d9e27ee49c1e6a2e6' value='ATSLock|515df05311232e8d9e27ee49c1e6a2e6'>
+            <label for='ATSLock|515df05311232e8d9e27ee49c1e6a2e6'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|515df05311232e8d9e27ee49c1e6a2e6' name='OverUnder|515df05311232e8d9e27ee49c1e6a2e6' value='Over|515df05311232e8d9e27ee49c1e6a2e6'>
             <label for='Over|515df05311232e8d9e27ee49c1e6a2e6'>Over 59.5</label><br>
             <input type='radio' id='Under|515df05311232e8d9e27ee49c1e6a2e6' name='OverUnder|515df05311232e8d9e27ee49c1e6a2e6' value='Under|515df05311232e8d9e27ee49c1e6a2e6'>
             <label for='Under|515df05311232e8d9e27ee49c1e6a2e6'>Under 59.5</label><br>
+            <input type='checkbox' id='OverUnder|515df05311232e8d9e27ee49c1e6a2e6' name='OverUnder|515df05311232e8d9e27ee49c1e6a2e6' value='OverUnder|515df05311232e8d9e27ee49c1e6a2e6'>
+            <label for='OverUnder|515df05311232e8d9e27ee49c1e6a2e6'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -149,12 +169,16 @@ font-size:25px;
             <label for='ATSAway|4faea3f97b001ba08674a22f622cc9cf'>Northwestern Wildcats 10.0</label><br>
             <input type='radio' id='ATSHome|4faea3f97b001ba08674a22f622cc9cf' name='ATS|4faea3f97b001ba08674a22f622cc9cf' value='ATSHome|4faea3f97b001ba08674a22f622cc9cf'>
             <label for='ATSHome|4faea3f97b001ba08674a22f622cc9cf'>Maryland Terrapins -10.0</label><br>
+            <input type='checkbox' id='ATSLock|4faea3f97b001ba08674a22f622cc9cf' name='ATSLock|4faea3f97b001ba08674a22f622cc9cf' value='ATSLock|4faea3f97b001ba08674a22f622cc9cf'>
+            <label for='ATSLock|4faea3f97b001ba08674a22f622cc9cf'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|4faea3f97b001ba08674a22f622cc9cf' name='OverUnder|4faea3f97b001ba08674a22f622cc9cf' value='Over|4faea3f97b001ba08674a22f622cc9cf'>
             <label for='Over|4faea3f97b001ba08674a22f622cc9cf'>Over 45.5</label><br>
             <input type='radio' id='Under|4faea3f97b001ba08674a22f622cc9cf' name='OverUnder|4faea3f97b001ba08674a22f622cc9cf' value='Under|4faea3f97b001ba08674a22f622cc9cf'>
             <label for='Under|4faea3f97b001ba08674a22f622cc9cf'>Under 45.5</label><br>
+            <input type='checkbox' id='OverUnder|4faea3f97b001ba08674a22f622cc9cf' name='OverUnder|4faea3f97b001ba08674a22f622cc9cf' value='OverUnder|4faea3f97b001ba08674a22f622cc9cf'>
+            <label for='OverUnder|4faea3f97b001ba08674a22f622cc9cf'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -166,12 +190,16 @@ font-size:25px;
             <label for='ATSAway|75117d5af6d6269cda13fc9cf3ead3d8'>UNLV Rebels -19.0</label><br>
             <input type='radio' id='ATSHome|75117d5af6d6269cda13fc9cf3ead3d8' name='ATS|75117d5af6d6269cda13fc9cf3ead3d8' value='ATSHome|75117d5af6d6269cda13fc9cf3ead3d8'>
             <label for='ATSHome|75117d5af6d6269cda13fc9cf3ead3d8'>Utah State Aggies 19.0</label><br>
+            <input type='checkbox' id='ATSLock|75117d5af6d6269cda13fc9cf3ead3d8' name='ATSLock|75117d5af6d6269cda13fc9cf3ead3d8' value='ATSLock|75117d5af6d6269cda13fc9cf3ead3d8'>
+            <label for='ATSLock|75117d5af6d6269cda13fc9cf3ead3d8'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|75117d5af6d6269cda13fc9cf3ead3d8' name='OverUnder|75117d5af6d6269cda13fc9cf3ead3d8' value='Over|75117d5af6d6269cda13fc9cf3ead3d8'>
             <label for='Over|75117d5af6d6269cda13fc9cf3ead3d8'>Over 65.5</label><br>
             <input type='radio' id='Under|75117d5af6d6269cda13fc9cf3ead3d8' name='OverUnder|75117d5af6d6269cda13fc9cf3ead3d8' value='Under|75117d5af6d6269cda13fc9cf3ead3d8'>
             <label for='Under|75117d5af6d6269cda13fc9cf3ead3d8'>Under 65.5</label><br>
+            <input type='checkbox' id='OverUnder|75117d5af6d6269cda13fc9cf3ead3d8' name='OverUnder|75117d5af6d6269cda13fc9cf3ead3d8' value='OverUnder|75117d5af6d6269cda13fc9cf3ead3d8'>
+            <label for='OverUnder|75117d5af6d6269cda13fc9cf3ead3d8'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -183,12 +211,16 @@ font-size:25px;
             <label for='ATSAway|efc5d736dc2fc2f1d28def2d76212b27'>Utah Utes -6.5</label><br>
             <input type='radio' id='ATSHome|efc5d736dc2fc2f1d28def2d76212b27' name='ATS|efc5d736dc2fc2f1d28def2d76212b27' value='ATSHome|efc5d736dc2fc2f1d28def2d76212b27'>
             <label for='ATSHome|efc5d736dc2fc2f1d28def2d76212b27'>Arizona State Sun Devils 6.5</label><br>
+            <input type='checkbox' id='ATSLock|efc5d736dc2fc2f1d28def2d76212b27' name='ATSLock|efc5d736dc2fc2f1d28def2d76212b27' value='ATSLock|efc5d736dc2fc2f1d28def2d76212b27'>
+            <label for='ATSLock|efc5d736dc2fc2f1d28def2d76212b27'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|efc5d736dc2fc2f1d28def2d76212b27' name='OverUnder|efc5d736dc2fc2f1d28def2d76212b27' value='Over|efc5d736dc2fc2f1d28def2d76212b27'>
             <label for='Over|efc5d736dc2fc2f1d28def2d76212b27'>Over 45.0</label><br>
             <input type='radio' id='Under|efc5d736dc2fc2f1d28def2d76212b27' name='OverUnder|efc5d736dc2fc2f1d28def2d76212b27' value='Under|efc5d736dc2fc2f1d28def2d76212b27'>
             <label for='Under|efc5d736dc2fc2f1d28def2d76212b27'>Under 45.0</label><br>
+            <input type='checkbox' id='OverUnder|efc5d736dc2fc2f1d28def2d76212b27' name='OverUnder|efc5d736dc2fc2f1d28def2d76212b27' value='OverUnder|efc5d736dc2fc2f1d28def2d76212b27'>
+            <label for='OverUnder|efc5d736dc2fc2f1d28def2d76212b27'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -200,12 +232,16 @@ font-size:25px;
             <label for='ATSAway|631271f24c613402ca0f87c89c2ae273'>Ball State Cardinals -6.5</label><br>
             <input type='radio' id='ATSHome|631271f24c613402ca0f87c89c2ae273' name='ATS|631271f24c613402ca0f87c89c2ae273' value='ATSHome|631271f24c613402ca0f87c89c2ae273'>
             <label for='ATSHome|631271f24c613402ca0f87c89c2ae273'>Kent State Golden Flashes 6.5</label><br>
+            <input type='checkbox' id='ATSLock|631271f24c613402ca0f87c89c2ae273' name='ATSLock|631271f24c613402ca0f87c89c2ae273' value='ATSLock|631271f24c613402ca0f87c89c2ae273'>
+            <label for='ATSLock|631271f24c613402ca0f87c89c2ae273'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|631271f24c613402ca0f87c89c2ae273' name='OverUnder|631271f24c613402ca0f87c89c2ae273' value='Over|631271f24c613402ca0f87c89c2ae273'>
             <label for='Over|631271f24c613402ca0f87c89c2ae273'>Over 59.5</label><br>
             <input type='radio' id='Under|631271f24c613402ca0f87c89c2ae273' name='OverUnder|631271f24c613402ca0f87c89c2ae273' value='Under|631271f24c613402ca0f87c89c2ae273'>
             <label for='Under|631271f24c613402ca0f87c89c2ae273'>Under 59.5</label><br>
+            <input type='checkbox' id='OverUnder|631271f24c613402ca0f87c89c2ae273' name='OverUnder|631271f24c613402ca0f87c89c2ae273' value='OverUnder|631271f24c613402ca0f87c89c2ae273'>
+            <label for='OverUnder|631271f24c613402ca0f87c89c2ae273'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -217,12 +253,16 @@ font-size:25px;
             <label for='ATSAway|84804b2b151a434540c6c187bae4b0a4'>Clemson Tigers -20.0</label><br>
             <input type='radio' id='ATSHome|84804b2b151a434540c6c187bae4b0a4' name='ATS|84804b2b151a434540c6c187bae4b0a4' value='ATSHome|84804b2b151a434540c6c187bae4b0a4'>
             <label for='ATSHome|84804b2b151a434540c6c187bae4b0a4'>Wake Forest Demon Deacons 20.0</label><br>
+            <input type='checkbox' id='ATSLock|84804b2b151a434540c6c187bae4b0a4' name='ATSLock|84804b2b151a434540c6c187bae4b0a4' value='ATSLock|84804b2b151a434540c6c187bae4b0a4'>
+            <label for='ATSLock|84804b2b151a434540c6c187bae4b0a4'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|84804b2b151a434540c6c187bae4b0a4' name='OverUnder|84804b2b151a434540c6c187bae4b0a4' value='Over|84804b2b151a434540c6c187bae4b0a4'>
             <label for='Over|84804b2b151a434540c6c187bae4b0a4'>Over 60.5</label><br>
             <input type='radio' id='Under|84804b2b151a434540c6c187bae4b0a4' name='OverUnder|84804b2b151a434540c6c187bae4b0a4' value='Under|84804b2b151a434540c6c187bae4b0a4'>
             <label for='Under|84804b2b151a434540c6c187bae4b0a4'>Under 60.5</label><br>
+            <input type='checkbox' id='OverUnder|84804b2b151a434540c6c187bae4b0a4' name='OverUnder|84804b2b151a434540c6c187bae4b0a4' value='OverUnder|84804b2b151a434540c6c187bae4b0a4'>
+            <label for='OverUnder|84804b2b151a434540c6c187bae4b0a4'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -234,12 +274,16 @@ font-size:25px;
             <label for='ATSAway|762b9ffd9ceb5e3d35890f69472b1adb'>Georgia Tech Yellow Jackets -5.5</label><br>
             <input type='radio' id='ATSHome|762b9ffd9ceb5e3d35890f69472b1adb' name='ATS|762b9ffd9ceb5e3d35890f69472b1adb' value='ATSHome|762b9ffd9ceb5e3d35890f69472b1adb'>
             <label for='ATSHome|762b9ffd9ceb5e3d35890f69472b1adb'>North Carolina Tar Heels 5.5</label><br>
+            <input type='checkbox' id='ATSLock|762b9ffd9ceb5e3d35890f69472b1adb' name='ATSLock|762b9ffd9ceb5e3d35890f69472b1adb' value='ATSLock|762b9ffd9ceb5e3d35890f69472b1adb'>
+            <label for='ATSLock|762b9ffd9ceb5e3d35890f69472b1adb'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|762b9ffd9ceb5e3d35890f69472b1adb' name='OverUnder|762b9ffd9ceb5e3d35890f69472b1adb' value='Over|762b9ffd9ceb5e3d35890f69472b1adb'>
             <label for='Over|762b9ffd9ceb5e3d35890f69472b1adb'>Over 59.0</label><br>
             <input type='radio' id='Under|762b9ffd9ceb5e3d35890f69472b1adb' name='OverUnder|762b9ffd9ceb5e3d35890f69472b1adb' value='Under|762b9ffd9ceb5e3d35890f69472b1adb'>
             <label for='Under|762b9ffd9ceb5e3d35890f69472b1adb'>Under 59.0</label><br>
+            <input type='checkbox' id='OverUnder|762b9ffd9ceb5e3d35890f69472b1adb' name='OverUnder|762b9ffd9ceb5e3d35890f69472b1adb' value='OverUnder|762b9ffd9ceb5e3d35890f69472b1adb'>
+            <label for='OverUnder|762b9ffd9ceb5e3d35890f69472b1adb'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -251,12 +295,16 @@ font-size:25px;
             <label for='ATSAway|85c0dc03b80234a9db6161f0b30ab08f'>Missouri Tigers -27.5</label><br>
             <input type='radio' id='ATSHome|85c0dc03b80234a9db6161f0b30ab08f' name='ATS|85c0dc03b80234a9db6161f0b30ab08f' value='ATSHome|85c0dc03b80234a9db6161f0b30ab08f'>
             <label for='ATSHome|85c0dc03b80234a9db6161f0b30ab08f'>UMass Minutemen 27.5</label><br>
+            <input type='checkbox' id='ATSLock|85c0dc03b80234a9db6161f0b30ab08f' name='ATSLock|85c0dc03b80234a9db6161f0b30ab08f' value='ATSLock|85c0dc03b80234a9db6161f0b30ab08f'>
+            <label for='ATSLock|85c0dc03b80234a9db6161f0b30ab08f'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|85c0dc03b80234a9db6161f0b30ab08f' name='OverUnder|85c0dc03b80234a9db6161f0b30ab08f' value='Over|85c0dc03b80234a9db6161f0b30ab08f'>
             <label for='Over|85c0dc03b80234a9db6161f0b30ab08f'>Over 54.5</label><br>
             <input type='radio' id='Under|85c0dc03b80234a9db6161f0b30ab08f' name='OverUnder|85c0dc03b80234a9db6161f0b30ab08f' value='Under|85c0dc03b80234a9db6161f0b30ab08f'>
             <label for='Under|85c0dc03b80234a9db6161f0b30ab08f'>Under 54.5</label><br>
+            <input type='checkbox' id='OverUnder|85c0dc03b80234a9db6161f0b30ab08f' name='OverUnder|85c0dc03b80234a9db6161f0b30ab08f' value='OverUnder|85c0dc03b80234a9db6161f0b30ab08f'>
+            <label for='OverUnder|85c0dc03b80234a9db6161f0b30ab08f'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -268,12 +316,16 @@ font-size:25px;
             <label for='ATSAway|18981958470b3289c1c91268a9ac6173'>South Carolina Gamecocks 21.0</label><br>
             <input type='radio' id='ATSHome|18981958470b3289c1c91268a9ac6173' name='ATS|18981958470b3289c1c91268a9ac6173' value='ATSHome|18981958470b3289c1c91268a9ac6173'>
             <label for='ATSHome|18981958470b3289c1c91268a9ac6173'>Alabama Crimson Tide -21.0</label><br>
+            <input type='checkbox' id='ATSLock|18981958470b3289c1c91268a9ac6173' name='ATSLock|18981958470b3289c1c91268a9ac6173' value='ATSLock|18981958470b3289c1c91268a9ac6173'>
+            <label for='ATSLock|18981958470b3289c1c91268a9ac6173'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|18981958470b3289c1c91268a9ac6173' name='OverUnder|18981958470b3289c1c91268a9ac6173' value='Over|18981958470b3289c1c91268a9ac6173'>
             <label for='Over|18981958470b3289c1c91268a9ac6173'>Over 50.5</label><br>
             <input type='radio' id='Under|18981958470b3289c1c91268a9ac6173' name='OverUnder|18981958470b3289c1c91268a9ac6173' value='Under|18981958470b3289c1c91268a9ac6173'>
             <label for='Under|18981958470b3289c1c91268a9ac6173'>Under 50.5</label><br>
+            <input type='checkbox' id='OverUnder|18981958470b3289c1c91268a9ac6173' name='OverUnder|18981958470b3289c1c91268a9ac6173' value='OverUnder|18981958470b3289c1c91268a9ac6173'>
+            <label for='OverUnder|18981958470b3289c1c91268a9ac6173'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -285,12 +337,16 @@ font-size:25px;
             <label for='ATSAway|acec1058c7889486ef7eafa74b74b29a'>Toledo Rockets -9.5</label><br>
             <input type='radio' id='ATSHome|acec1058c7889486ef7eafa74b74b29a' name='ATS|acec1058c7889486ef7eafa74b74b29a' value='ATSHome|acec1058c7889486ef7eafa74b74b29a'>
             <label for='ATSHome|acec1058c7889486ef7eafa74b74b29a'>Buffalo Bulls 9.5</label><br>
+            <input type='checkbox' id='ATSLock|acec1058c7889486ef7eafa74b74b29a' name='ATSLock|acec1058c7889486ef7eafa74b74b29a' value='ATSLock|acec1058c7889486ef7eafa74b74b29a'>
+            <label for='ATSLock|acec1058c7889486ef7eafa74b74b29a'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|acec1058c7889486ef7eafa74b74b29a' name='OverUnder|acec1058c7889486ef7eafa74b74b29a' value='Over|acec1058c7889486ef7eafa74b74b29a'>
             <label for='Over|acec1058c7889486ef7eafa74b74b29a'>Over 44.5</label><br>
             <input type='radio' id='Under|acec1058c7889486ef7eafa74b74b29a' name='OverUnder|acec1058c7889486ef7eafa74b74b29a' value='Under|acec1058c7889486ef7eafa74b74b29a'>
             <label for='Under|acec1058c7889486ef7eafa74b74b29a'>Under 44.5</label><br>
+            <input type='checkbox' id='OverUnder|acec1058c7889486ef7eafa74b74b29a' name='OverUnder|acec1058c7889486ef7eafa74b74b29a' value='OverUnder|acec1058c7889486ef7eafa74b74b29a'>
+            <label for='OverUnder|acec1058c7889486ef7eafa74b74b29a'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -302,12 +358,16 @@ font-size:25px;
             <label for='ATSAway|fe044cee71d34b74e002c332a61cb431'>UAB Blazers 26.0</label><br>
             <input type='radio' id='ATSHome|fe044cee71d34b74e002c332a61cb431' name='ATS|fe044cee71d34b74e002c332a61cb431' value='ATSHome|fe044cee71d34b74e002c332a61cb431'>
             <label for='ATSHome|fe044cee71d34b74e002c332a61cb431'>Army Black Knights -26.0</label><br>
+            <input type='checkbox' id='ATSLock|fe044cee71d34b74e002c332a61cb431' name='ATSLock|fe044cee71d34b74e002c332a61cb431' value='ATSLock|fe044cee71d34b74e002c332a61cb431'>
+            <label for='ATSLock|fe044cee71d34b74e002c332a61cb431'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|fe044cee71d34b74e002c332a61cb431' name='OverUnder|fe044cee71d34b74e002c332a61cb431' value='Over|fe044cee71d34b74e002c332a61cb431'>
             <label for='Over|fe044cee71d34b74e002c332a61cb431'>Over 55.0</label><br>
             <input type='radio' id='Under|fe044cee71d34b74e002c332a61cb431' name='OverUnder|fe044cee71d34b74e002c332a61cb431' value='Under|fe044cee71d34b74e002c332a61cb431'>
             <label for='Under|fe044cee71d34b74e002c332a61cb431'>Under 55.0</label><br>
+            <input type='checkbox' id='OverUnder|fe044cee71d34b74e002c332a61cb431' name='OverUnder|fe044cee71d34b74e002c332a61cb431' value='OverUnder|fe044cee71d34b74e002c332a61cb431'>
+            <label for='OverUnder|fe044cee71d34b74e002c332a61cb431'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -319,12 +379,16 @@ font-size:25px;
             <label for='ATSAway|ecf597598bc3cc6dfa3222d95a130031'>Washington Huskies 2.5</label><br>
             <input type='radio' id='ATSHome|ecf597598bc3cc6dfa3222d95a130031' name='ATS|ecf597598bc3cc6dfa3222d95a130031' value='ATSHome|ecf597598bc3cc6dfa3222d95a130031'>
             <label for='ATSHome|ecf597598bc3cc6dfa3222d95a130031'>Iowa Hawkeyes -2.5</label><br>
+            <input type='checkbox' id='ATSLock|ecf597598bc3cc6dfa3222d95a130031' name='ATSLock|ecf597598bc3cc6dfa3222d95a130031' value='ATSLock|ecf597598bc3cc6dfa3222d95a130031'>
+            <label for='ATSLock|ecf597598bc3cc6dfa3222d95a130031'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|ecf597598bc3cc6dfa3222d95a130031' name='OverUnder|ecf597598bc3cc6dfa3222d95a130031' value='Over|ecf597598bc3cc6dfa3222d95a130031'>
             <label for='Over|ecf597598bc3cc6dfa3222d95a130031'>Over 42.0</label><br>
             <input type='radio' id='Under|ecf597598bc3cc6dfa3222d95a130031' name='OverUnder|ecf597598bc3cc6dfa3222d95a130031' value='Under|ecf597598bc3cc6dfa3222d95a130031'>
             <label for='Under|ecf597598bc3cc6dfa3222d95a130031'>Under 42.0</label><br>
+            <input type='checkbox' id='OverUnder|ecf597598bc3cc6dfa3222d95a130031' name='OverUnder|ecf597598bc3cc6dfa3222d95a130031' value='OverUnder|ecf597598bc3cc6dfa3222d95a130031'>
+            <label for='OverUnder|ecf597598bc3cc6dfa3222d95a130031'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -336,12 +400,16 @@ font-size:25px;
             <label for='ATSAway|0ed4ccec5843b2798516f1fb1f218f2f'>Wisconsin Badgers 2.5</label><br>
             <input type='radio' id='ATSHome|0ed4ccec5843b2798516f1fb1f218f2f' name='ATS|0ed4ccec5843b2798516f1fb1f218f2f' value='ATSHome|0ed4ccec5843b2798516f1fb1f218f2f'>
             <label for='ATSHome|0ed4ccec5843b2798516f1fb1f218f2f'>Rutgers Scarlet Knights -2.5</label><br>
+            <input type='checkbox' id='ATSLock|0ed4ccec5843b2798516f1fb1f218f2f' name='ATSLock|0ed4ccec5843b2798516f1fb1f218f2f' value='ATSLock|0ed4ccec5843b2798516f1fb1f218f2f'>
+            <label for='ATSLock|0ed4ccec5843b2798516f1fb1f218f2f'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|0ed4ccec5843b2798516f1fb1f218f2f' name='OverUnder|0ed4ccec5843b2798516f1fb1f218f2f' value='Over|0ed4ccec5843b2798516f1fb1f218f2f'>
             <label for='Over|0ed4ccec5843b2798516f1fb1f218f2f'>Over 40.5</label><br>
             <input type='radio' id='Under|0ed4ccec5843b2798516f1fb1f218f2f' name='OverUnder|0ed4ccec5843b2798516f1fb1f218f2f' value='Under|0ed4ccec5843b2798516f1fb1f218f2f'>
             <label for='Under|0ed4ccec5843b2798516f1fb1f218f2f'>Under 40.5</label><br>
+            <input type='checkbox' id='OverUnder|0ed4ccec5843b2798516f1fb1f218f2f' name='OverUnder|0ed4ccec5843b2798516f1fb1f218f2f' value='OverUnder|0ed4ccec5843b2798516f1fb1f218f2f'>
+            <label for='OverUnder|0ed4ccec5843b2798516f1fb1f218f2f'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -353,12 +421,16 @@ font-size:25px;
             <label for='ATSAway|08ae8e36880c7e81244fc206b48153a7'>Miami (OH) RedHawks -2.0</label><br>
             <input type='radio' id='ATSHome|08ae8e36880c7e81244fc206b48153a7' name='ATS|08ae8e36880c7e81244fc206b48153a7' value='ATSHome|08ae8e36880c7e81244fc206b48153a7'>
             <label for='ATSHome|08ae8e36880c7e81244fc206b48153a7'>Eastern Michigan Eagles 2.0</label><br>
+            <input type='checkbox' id='ATSLock|08ae8e36880c7e81244fc206b48153a7' name='ATSLock|08ae8e36880c7e81244fc206b48153a7' value='ATSLock|08ae8e36880c7e81244fc206b48153a7'>
+            <label for='ATSLock|08ae8e36880c7e81244fc206b48153a7'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|08ae8e36880c7e81244fc206b48153a7' name='OverUnder|08ae8e36880c7e81244fc206b48153a7' value='Over|08ae8e36880c7e81244fc206b48153a7'>
             <label for='Over|08ae8e36880c7e81244fc206b48153a7'>Over 46.5</label><br>
             <input type='radio' id='Under|08ae8e36880c7e81244fc206b48153a7' name='OverUnder|08ae8e36880c7e81244fc206b48153a7' value='Under|08ae8e36880c7e81244fc206b48153a7'>
             <label for='Under|08ae8e36880c7e81244fc206b48153a7'>Under 46.5</label><br>
+            <input type='checkbox' id='OverUnder|08ae8e36880c7e81244fc206b48153a7' name='OverUnder|08ae8e36880c7e81244fc206b48153a7' value='OverUnder|08ae8e36880c7e81244fc206b48153a7'>
+            <label for='OverUnder|08ae8e36880c7e81244fc206b48153a7'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -370,12 +442,16 @@ font-size:25px;
             <label for='ATSAway|d9716a342cb751d058bfb498c5bca7f4'>Akron Zips 9.5</label><br>
             <input type='radio' id='ATSHome|d9716a342cb751d058bfb498c5bca7f4' name='ATS|d9716a342cb751d058bfb498c5bca7f4' value='ATSHome|d9716a342cb751d058bfb498c5bca7f4'>
             <label for='ATSHome|d9716a342cb751d058bfb498c5bca7f4'>Western Michigan Broncos -9.5</label><br>
+            <input type='checkbox' id='ATSLock|d9716a342cb751d058bfb498c5bca7f4' name='ATSLock|d9716a342cb751d058bfb498c5bca7f4' value='ATSLock|d9716a342cb751d058bfb498c5bca7f4'>
+            <label for='ATSLock|d9716a342cb751d058bfb498c5bca7f4'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|d9716a342cb751d058bfb498c5bca7f4' name='OverUnder|d9716a342cb751d058bfb498c5bca7f4' value='Over|d9716a342cb751d058bfb498c5bca7f4'>
             <label for='Over|d9716a342cb751d058bfb498c5bca7f4'>Over 53.5</label><br>
             <input type='radio' id='Under|d9716a342cb751d058bfb498c5bca7f4' name='OverUnder|d9716a342cb751d058bfb498c5bca7f4' value='Under|d9716a342cb751d058bfb498c5bca7f4'>
             <label for='Under|d9716a342cb751d058bfb498c5bca7f4'>Under 53.5</label><br>
+            <input type='checkbox' id='OverUnder|d9716a342cb751d058bfb498c5bca7f4' name='OverUnder|d9716a342cb751d058bfb498c5bca7f4' value='OverUnder|d9716a342cb751d058bfb498c5bca7f4'>
+            <label for='OverUnder|d9716a342cb751d058bfb498c5bca7f4'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -387,12 +463,16 @@ font-size:25px;
             <label for='ATSAway|9c48527ea3013d562e61e05c44507137'>California Golden Bears 3.5</label><br>
             <input type='radio' id='ATSHome|9c48527ea3013d562e61e05c44507137' name='ATS|9c48527ea3013d562e61e05c44507137' value='ATSHome|9c48527ea3013d562e61e05c44507137'>
             <label for='ATSHome|9c48527ea3013d562e61e05c44507137'>Pittsburgh Panthers -3.5</label><br>
+            <input type='checkbox' id='ATSLock|9c48527ea3013d562e61e05c44507137' name='ATSLock|9c48527ea3013d562e61e05c44507137' value='ATSLock|9c48527ea3013d562e61e05c44507137'>
+            <label for='ATSLock|9c48527ea3013d562e61e05c44507137'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|9c48527ea3013d562e61e05c44507137' name='OverUnder|9c48527ea3013d562e61e05c44507137' value='Over|9c48527ea3013d562e61e05c44507137'>
             <label for='Over|9c48527ea3013d562e61e05c44507137'>Over 59.5</label><br>
             <input type='radio' id='Under|9c48527ea3013d562e61e05c44507137' name='OverUnder|9c48527ea3013d562e61e05c44507137' value='Under|9c48527ea3013d562e61e05c44507137'>
             <label for='Under|9c48527ea3013d562e61e05c44507137'>Under 59.5</label><br>
+            <input type='checkbox' id='OverUnder|9c48527ea3013d562e61e05c44507137' name='OverUnder|9c48527ea3013d562e61e05c44507137' value='OverUnder|9c48527ea3013d562e61e05c44507137'>
+            <label for='OverUnder|9c48527ea3013d562e61e05c44507137'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -404,12 +484,16 @@ font-size:25px;
             <label for='ATSAway|d5fe947092b49d7f6ca8d37796c9e6ef'>Cincinnati Bearcats 3.0</label><br>
             <input type='radio' id='ATSHome|d5fe947092b49d7f6ca8d37796c9e6ef' name='ATS|d5fe947092b49d7f6ca8d37796c9e6ef' value='ATSHome|d5fe947092b49d7f6ca8d37796c9e6ef'>
             <label for='ATSHome|d5fe947092b49d7f6ca8d37796c9e6ef'>UCF Knights -3.0</label><br>
+            <input type='checkbox' id='ATSLock|d5fe947092b49d7f6ca8d37796c9e6ef' name='ATSLock|d5fe947092b49d7f6ca8d37796c9e6ef' value='ATSLock|d5fe947092b49d7f6ca8d37796c9e6ef'>
+            <label for='ATSLock|d5fe947092b49d7f6ca8d37796c9e6ef'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|d5fe947092b49d7f6ca8d37796c9e6ef' name='OverUnder|d5fe947092b49d7f6ca8d37796c9e6ef' value='Over|d5fe947092b49d7f6ca8d37796c9e6ef'>
             <label for='Over|d5fe947092b49d7f6ca8d37796c9e6ef'>Over 59.0</label><br>
             <input type='radio' id='Under|d5fe947092b49d7f6ca8d37796c9e6ef' name='OverUnder|d5fe947092b49d7f6ca8d37796c9e6ef' value='Under|d5fe947092b49d7f6ca8d37796c9e6ef'>
             <label for='Under|d5fe947092b49d7f6ca8d37796c9e6ef'>Under 59.0</label><br>
+            <input type='checkbox' id='OverUnder|d5fe947092b49d7f6ca8d37796c9e6ef' name='OverUnder|d5fe947092b49d7f6ca8d37796c9e6ef' value='OverUnder|d5fe947092b49d7f6ca8d37796c9e6ef'>
+            <label for='OverUnder|d5fe947092b49d7f6ca8d37796c9e6ef'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -421,12 +505,16 @@ font-size:25px;
             <label for='ATSAway|d0842ccb36f48e552583883741cdf5d0'>Louisville Cardinals -7.0</label><br>
             <input type='radio' id='ATSHome|d0842ccb36f48e552583883741cdf5d0' name='ATS|d0842ccb36f48e552583883741cdf5d0' value='ATSHome|d0842ccb36f48e552583883741cdf5d0'>
             <label for='ATSHome|d0842ccb36f48e552583883741cdf5d0'>Virginia Cavaliers 7.0</label><br>
+            <input type='checkbox' id='ATSLock|d0842ccb36f48e552583883741cdf5d0' name='ATSLock|d0842ccb36f48e552583883741cdf5d0' value='ATSLock|d0842ccb36f48e552583883741cdf5d0'>
+            <label for='ATSLock|d0842ccb36f48e552583883741cdf5d0'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|d0842ccb36f48e552583883741cdf5d0' name='OverUnder|d0842ccb36f48e552583883741cdf5d0' value='Over|d0842ccb36f48e552583883741cdf5d0'>
             <label for='Over|d0842ccb36f48e552583883741cdf5d0'>Over 54.5</label><br>
             <input type='radio' id='Under|d0842ccb36f48e552583883741cdf5d0' name='OverUnder|d0842ccb36f48e552583883741cdf5d0' value='Under|d0842ccb36f48e552583883741cdf5d0'>
             <label for='Under|d0842ccb36f48e552583883741cdf5d0'>Under 54.5</label><br>
+            <input type='checkbox' id='OverUnder|d0842ccb36f48e552583883741cdf5d0' name='OverUnder|d0842ccb36f48e552583883741cdf5d0' value='OverUnder|d0842ccb36f48e552583883741cdf5d0'>
+            <label for='OverUnder|d0842ccb36f48e552583883741cdf5d0'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -438,12 +526,16 @@ font-size:25px;
             <label for='ATSAway|63418e8edb22dd2539a0847956b56813'>Memphis Tigers -7.5</label><br>
             <input type='radio' id='ATSHome|63418e8edb22dd2539a0847956b56813' name='ATS|63418e8edb22dd2539a0847956b56813' value='ATSHome|63418e8edb22dd2539a0847956b56813'>
             <label for='ATSHome|63418e8edb22dd2539a0847956b56813'>South Florida Bulls 7.5</label><br>
+            <input type='checkbox' id='ATSLock|63418e8edb22dd2539a0847956b56813' name='ATSLock|63418e8edb22dd2539a0847956b56813' value='ATSLock|63418e8edb22dd2539a0847956b56813'>
+            <label for='ATSLock|63418e8edb22dd2539a0847956b56813'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|63418e8edb22dd2539a0847956b56813' name='OverUnder|63418e8edb22dd2539a0847956b56813' value='Over|63418e8edb22dd2539a0847956b56813'>
             <label for='Over|63418e8edb22dd2539a0847956b56813'>Over 60.5</label><br>
             <input type='radio' id='Under|63418e8edb22dd2539a0847956b56813' name='OverUnder|63418e8edb22dd2539a0847956b56813' value='Under|63418e8edb22dd2539a0847956b56813'>
             <label for='Under|63418e8edb22dd2539a0847956b56813'>Under 60.5</label><br>
+            <input type='checkbox' id='OverUnder|63418e8edb22dd2539a0847956b56813' name='OverUnder|63418e8edb22dd2539a0847956b56813' value='OverUnder|63418e8edb22dd2539a0847956b56813'>
+            <label for='OverUnder|63418e8edb22dd2539a0847956b56813'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -455,12 +547,16 @@ font-size:25px;
             <label for='ATSAway|6f534dfc8a623915789ab2902bd0dc6f'>Northern Illinois Huskies 3.0</label><br>
             <input type='radio' id='ATSHome|6f534dfc8a623915789ab2902bd0dc6f' name='ATS|6f534dfc8a623915789ab2902bd0dc6f' value='ATSHome|6f534dfc8a623915789ab2902bd0dc6f'>
             <label for='ATSHome|6f534dfc8a623915789ab2902bd0dc6f'>Bowling Green Falcons -3.0</label><br>
+            <input type='checkbox' id='ATSLock|6f534dfc8a623915789ab2902bd0dc6f' name='ATSLock|6f534dfc8a623915789ab2902bd0dc6f' value='ATSLock|6f534dfc8a623915789ab2902bd0dc6f'>
+            <label for='ATSLock|6f534dfc8a623915789ab2902bd0dc6f'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|6f534dfc8a623915789ab2902bd0dc6f' name='OverUnder|6f534dfc8a623915789ab2902bd0dc6f' value='Over|6f534dfc8a623915789ab2902bd0dc6f'>
             <label for='Over|6f534dfc8a623915789ab2902bd0dc6f'>Over 48.0</label><br>
             <input type='radio' id='Under|6f534dfc8a623915789ab2902bd0dc6f' name='OverUnder|6f534dfc8a623915789ab2902bd0dc6f' value='Under|6f534dfc8a623915789ab2902bd0dc6f'>
             <label for='Under|6f534dfc8a623915789ab2902bd0dc6f'>Under 48.0</label><br>
+            <input type='checkbox' id='OverUnder|6f534dfc8a623915789ab2902bd0dc6f' name='OverUnder|6f534dfc8a623915789ab2902bd0dc6f' value='OverUnder|6f534dfc8a623915789ab2902bd0dc6f'>
+            <label for='OverUnder|6f534dfc8a623915789ab2902bd0dc6f'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -472,12 +568,16 @@ font-size:25px;
             <label for='ATSAway|5e9ef9ef40086e05db5c9317646dcefb'>Old Dominion Monarchs 1.5</label><br>
             <input type='radio' id='ATSHome|5e9ef9ef40086e05db5c9317646dcefb' name='ATS|5e9ef9ef40086e05db5c9317646dcefb' value='ATSHome|5e9ef9ef40086e05db5c9317646dcefb'>
             <label for='ATSHome|5e9ef9ef40086e05db5c9317646dcefb'>Georgia State Panthers -1.5</label><br>
+            <input type='checkbox' id='ATSLock|5e9ef9ef40086e05db5c9317646dcefb' name='ATSLock|5e9ef9ef40086e05db5c9317646dcefb' value='ATSLock|5e9ef9ef40086e05db5c9317646dcefb'>
+            <label for='ATSLock|5e9ef9ef40086e05db5c9317646dcefb'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|5e9ef9ef40086e05db5c9317646dcefb' name='OverUnder|5e9ef9ef40086e05db5c9317646dcefb' value='Over|5e9ef9ef40086e05db5c9317646dcefb'>
             <label for='Over|5e9ef9ef40086e05db5c9317646dcefb'>Over 55.0</label><br>
             <input type='radio' id='Under|5e9ef9ef40086e05db5c9317646dcefb' name='OverUnder|5e9ef9ef40086e05db5c9317646dcefb' value='Under|5e9ef9ef40086e05db5c9317646dcefb'>
             <label for='Under|5e9ef9ef40086e05db5c9317646dcefb'>Under 55.0</label><br>
+            <input type='checkbox' id='OverUnder|5e9ef9ef40086e05db5c9317646dcefb' name='OverUnder|5e9ef9ef40086e05db5c9317646dcefb' value='OverUnder|5e9ef9ef40086e05db5c9317646dcefb'>
+            <label for='OverUnder|5e9ef9ef40086e05db5c9317646dcefb'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -489,12 +589,16 @@ font-size:25px;
             <label for='ATSAway|ec2a1deabdf4718b04b863b01fa8d46c'>Penn State Nittany Lions -5.5</label><br>
             <input type='radio' id='ATSHome|ec2a1deabdf4718b04b863b01fa8d46c' name='ATS|ec2a1deabdf4718b04b863b01fa8d46c' value='ATSHome|ec2a1deabdf4718b04b863b01fa8d46c'>
             <label for='ATSHome|ec2a1deabdf4718b04b863b01fa8d46c'>USC Trojans 5.5</label><br>
+            <input type='checkbox' id='ATSLock|ec2a1deabdf4718b04b863b01fa8d46c' name='ATSLock|ec2a1deabdf4718b04b863b01fa8d46c' value='ATSLock|ec2a1deabdf4718b04b863b01fa8d46c'>
+            <label for='ATSLock|ec2a1deabdf4718b04b863b01fa8d46c'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|ec2a1deabdf4718b04b863b01fa8d46c' name='OverUnder|ec2a1deabdf4718b04b863b01fa8d46c' value='Over|ec2a1deabdf4718b04b863b01fa8d46c'>
             <label for='Over|ec2a1deabdf4718b04b863b01fa8d46c'>Over 50.5</label><br>
             <input type='radio' id='Under|ec2a1deabdf4718b04b863b01fa8d46c' name='OverUnder|ec2a1deabdf4718b04b863b01fa8d46c' value='Under|ec2a1deabdf4718b04b863b01fa8d46c'>
             <label for='Under|ec2a1deabdf4718b04b863b01fa8d46c'>Under 50.5</label><br>
+            <input type='checkbox' id='OverUnder|ec2a1deabdf4718b04b863b01fa8d46c' name='OverUnder|ec2a1deabdf4718b04b863b01fa8d46c' value='OverUnder|ec2a1deabdf4718b04b863b01fa8d46c'>
+            <label for='OverUnder|ec2a1deabdf4718b04b863b01fa8d46c'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -506,12 +610,16 @@ font-size:25px;
             <label for='ATSAway|976c3efa457dce0d6430d76069b09454'>Purdue Boilermakers 19.5</label><br>
             <input type='radio' id='ATSHome|976c3efa457dce0d6430d76069b09454' name='ATS|976c3efa457dce0d6430d76069b09454' value='ATSHome|976c3efa457dce0d6430d76069b09454'>
             <label for='ATSHome|976c3efa457dce0d6430d76069b09454'>Illinois Fighting Illini -19.5</label><br>
+            <input type='checkbox' id='ATSLock|976c3efa457dce0d6430d76069b09454' name='ATSLock|976c3efa457dce0d6430d76069b09454' value='ATSLock|976c3efa457dce0d6430d76069b09454'>
+            <label for='ATSLock|976c3efa457dce0d6430d76069b09454'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|976c3efa457dce0d6430d76069b09454' name='OverUnder|976c3efa457dce0d6430d76069b09454' value='Over|976c3efa457dce0d6430d76069b09454'>
             <label for='Over|976c3efa457dce0d6430d76069b09454'>Over 49.5</label><br>
             <input type='radio' id='Under|976c3efa457dce0d6430d76069b09454' name='OverUnder|976c3efa457dce0d6430d76069b09454' value='Under|976c3efa457dce0d6430d76069b09454'>
             <label for='Under|976c3efa457dce0d6430d76069b09454'>Under 49.5</label><br>
+            <input type='checkbox' id='OverUnder|976c3efa457dce0d6430d76069b09454' name='OverUnder|976c3efa457dce0d6430d76069b09454' value='OverUnder|976c3efa457dce0d6430d76069b09454'>
+            <label for='OverUnder|976c3efa457dce0d6430d76069b09454'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -523,12 +631,16 @@ font-size:25px;
             <label for='ATSAway|eff52aef293ca1e8a18bc527accf7106'>San Diego State Aztecs -2.0</label><br>
             <input type='radio' id='ATSHome|eff52aef293ca1e8a18bc527accf7106' name='ATS|eff52aef293ca1e8a18bc527accf7106' value='ATSHome|eff52aef293ca1e8a18bc527accf7106'>
             <label for='ATSHome|eff52aef293ca1e8a18bc527accf7106'>Wyoming Cowboys 2.0</label><br>
+            <input type='checkbox' id='ATSLock|eff52aef293ca1e8a18bc527accf7106' name='ATSLock|eff52aef293ca1e8a18bc527accf7106' value='ATSLock|eff52aef293ca1e8a18bc527accf7106'>
+            <label for='ATSLock|eff52aef293ca1e8a18bc527accf7106'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|eff52aef293ca1e8a18bc527accf7106' name='OverUnder|eff52aef293ca1e8a18bc527accf7106' value='Over|eff52aef293ca1e8a18bc527accf7106'>
             <label for='Over|eff52aef293ca1e8a18bc527accf7106'>Over 42.0</label><br>
             <input type='radio' id='Under|eff52aef293ca1e8a18bc527accf7106' name='OverUnder|eff52aef293ca1e8a18bc527accf7106' value='Under|eff52aef293ca1e8a18bc527accf7106'>
             <label for='Under|eff52aef293ca1e8a18bc527accf7106'>Under 42.0</label><br>
+            <input type='checkbox' id='OverUnder|eff52aef293ca1e8a18bc527accf7106' name='OverUnder|eff52aef293ca1e8a18bc527accf7106' value='OverUnder|eff52aef293ca1e8a18bc527accf7106'>
+            <label for='OverUnder|eff52aef293ca1e8a18bc527accf7106'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -540,12 +652,16 @@ font-size:25px;
             <label for='ATSAway|5ae1edfbcb2867bf81521c38d99c8280'>Stanford Cardinal 24.0</label><br>
             <input type='radio' id='ATSHome|5ae1edfbcb2867bf81521c38d99c8280' name='ATS|5ae1edfbcb2867bf81521c38d99c8280' value='ATSHome|5ae1edfbcb2867bf81521c38d99c8280'>
             <label for='ATSHome|5ae1edfbcb2867bf81521c38d99c8280'>Notre Dame Fighting Irish -24.0</label><br>
+            <input type='checkbox' id='ATSLock|5ae1edfbcb2867bf81521c38d99c8280' name='ATSLock|5ae1edfbcb2867bf81521c38d99c8280' value='ATSLock|5ae1edfbcb2867bf81521c38d99c8280'>
+            <label for='ATSLock|5ae1edfbcb2867bf81521c38d99c8280'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|5ae1edfbcb2867bf81521c38d99c8280' name='OverUnder|5ae1edfbcb2867bf81521c38d99c8280' value='Over|5ae1edfbcb2867bf81521c38d99c8280'>
             <label for='Over|5ae1edfbcb2867bf81521c38d99c8280'>Over 45.5</label><br>
             <input type='radio' id='Under|5ae1edfbcb2867bf81521c38d99c8280' name='OverUnder|5ae1edfbcb2867bf81521c38d99c8280' value='Under|5ae1edfbcb2867bf81521c38d99c8280'>
             <label for='Under|5ae1edfbcb2867bf81521c38d99c8280'>Under 45.5</label><br>
+            <input type='checkbox' id='OverUnder|5ae1edfbcb2867bf81521c38d99c8280' name='OverUnder|5ae1edfbcb2867bf81521c38d99c8280' value='OverUnder|5ae1edfbcb2867bf81521c38d99c8280'>
+            <label for='OverUnder|5ae1edfbcb2867bf81521c38d99c8280'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -557,12 +673,16 @@ font-size:25px;
             <label for='ATSAway|d4637f010f52e3d47c1efa4b2be0ca5b'>Texas Longhorns -14.5</label><br>
             <input type='radio' id='ATSHome|d4637f010f52e3d47c1efa4b2be0ca5b' name='ATS|d4637f010f52e3d47c1efa4b2be0ca5b' value='ATSHome|d4637f010f52e3d47c1efa4b2be0ca5b'>
             <label for='ATSHome|d4637f010f52e3d47c1efa4b2be0ca5b'>Oklahoma Sooners 14.5</label><br>
+            <input type='checkbox' id='ATSLock|d4637f010f52e3d47c1efa4b2be0ca5b' name='ATSLock|d4637f010f52e3d47c1efa4b2be0ca5b' value='ATSLock|d4637f010f52e3d47c1efa4b2be0ca5b'>
+            <label for='ATSLock|d4637f010f52e3d47c1efa4b2be0ca5b'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|d4637f010f52e3d47c1efa4b2be0ca5b' name='OverUnder|d4637f010f52e3d47c1efa4b2be0ca5b' value='Over|d4637f010f52e3d47c1efa4b2be0ca5b'>
             <label for='Over|d4637f010f52e3d47c1efa4b2be0ca5b'>Over 50.5</label><br>
             <input type='radio' id='Under|d4637f010f52e3d47c1efa4b2be0ca5b' name='OverUnder|d4637f010f52e3d47c1efa4b2be0ca5b' value='Under|d4637f010f52e3d47c1efa4b2be0ca5b'>
             <label for='Under|d4637f010f52e3d47c1efa4b2be0ca5b'>Under 50.5</label><br>
+            <input type='checkbox' id='OverUnder|d4637f010f52e3d47c1efa4b2be0ca5b' name='OverUnder|d4637f010f52e3d47c1efa4b2be0ca5b' value='OverUnder|d4637f010f52e3d47c1efa4b2be0ca5b'>
+            <label for='OverUnder|d4637f010f52e3d47c1efa4b2be0ca5b'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -574,12 +694,16 @@ font-size:25px;
             <label for='ATSAway|c2c5135d0d091f1269473266b77839d9'>Arizona Wildcats 5.5</label><br>
             <input type='radio' id='ATSHome|c2c5135d0d091f1269473266b77839d9' name='ATS|c2c5135d0d091f1269473266b77839d9' value='ATSHome|c2c5135d0d091f1269473266b77839d9'>
             <label for='ATSHome|c2c5135d0d091f1269473266b77839d9'>BYU Cougars -5.5</label><br>
+            <input type='checkbox' id='ATSLock|c2c5135d0d091f1269473266b77839d9' name='ATSLock|c2c5135d0d091f1269473266b77839d9' value='ATSLock|c2c5135d0d091f1269473266b77839d9'>
+            <label for='ATSLock|c2c5135d0d091f1269473266b77839d9'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|c2c5135d0d091f1269473266b77839d9' name='OverUnder|c2c5135d0d091f1269473266b77839d9' value='Over|c2c5135d0d091f1269473266b77839d9'>
             <label for='Over|c2c5135d0d091f1269473266b77839d9'>Over 49.5</label><br>
             <input type='radio' id='Under|c2c5135d0d091f1269473266b77839d9' name='OverUnder|c2c5135d0d091f1269473266b77839d9' value='Under|c2c5135d0d091f1269473266b77839d9'>
             <label for='Under|c2c5135d0d091f1269473266b77839d9'>Under 49.5</label><br>
+            <input type='checkbox' id='OverUnder|c2c5135d0d091f1269473266b77839d9' name='OverUnder|c2c5135d0d091f1269473266b77839d9' value='OverUnder|c2c5135d0d091f1269473266b77839d9'>
+            <label for='OverUnder|c2c5135d0d091f1269473266b77839d9'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -591,12 +715,16 @@ font-size:25px;
             <label for='ATSAway|0983429e2ccc6ed6a7943d271940fb6f'>Ohio Bobcats -3.0</label><br>
             <input type='radio' id='ATSHome|0983429e2ccc6ed6a7943d271940fb6f' name='ATS|0983429e2ccc6ed6a7943d271940fb6f' value='ATSHome|0983429e2ccc6ed6a7943d271940fb6f'>
             <label for='ATSHome|0983429e2ccc6ed6a7943d271940fb6f'>Central Michigan Chippewas 3.0</label><br>
+            <input type='checkbox' id='ATSLock|0983429e2ccc6ed6a7943d271940fb6f' name='ATSLock|0983429e2ccc6ed6a7943d271940fb6f' value='ATSLock|0983429e2ccc6ed6a7943d271940fb6f'>
+            <label for='ATSLock|0983429e2ccc6ed6a7943d271940fb6f'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|0983429e2ccc6ed6a7943d271940fb6f' name='OverUnder|0983429e2ccc6ed6a7943d271940fb6f' value='Over|0983429e2ccc6ed6a7943d271940fb6f'>
             <label for='Over|0983429e2ccc6ed6a7943d271940fb6f'>Over 48.5</label><br>
             <input type='radio' id='Under|0983429e2ccc6ed6a7943d271940fb6f' name='OverUnder|0983429e2ccc6ed6a7943d271940fb6f' value='Under|0983429e2ccc6ed6a7943d271940fb6f'>
             <label for='Under|0983429e2ccc6ed6a7943d271940fb6f'>Under 48.5</label><br>
+            <input type='checkbox' id='OverUnder|0983429e2ccc6ed6a7943d271940fb6f' name='OverUnder|0983429e2ccc6ed6a7943d271940fb6f' value='OverUnder|0983429e2ccc6ed6a7943d271940fb6f'>
+            <label for='OverUnder|0983429e2ccc6ed6a7943d271940fb6f'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -608,12 +736,16 @@ font-size:25px;
             <label for='ATSAway|56a389aa660514383b9743f1752e98e9'>Mississippi State Bulldogs 34.0</label><br>
             <input type='radio' id='ATSHome|56a389aa660514383b9743f1752e98e9' name='ATS|56a389aa660514383b9743f1752e98e9' value='ATSHome|56a389aa660514383b9743f1752e98e9'>
             <label for='ATSHome|56a389aa660514383b9743f1752e98e9'>Georgia Bulldogs -34.0</label><br>
+            <input type='checkbox' id='ATSLock|56a389aa660514383b9743f1752e98e9' name='ATSLock|56a389aa660514383b9743f1752e98e9' value='ATSLock|56a389aa660514383b9743f1752e98e9'>
+            <label for='ATSLock|56a389aa660514383b9743f1752e98e9'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|56a389aa660514383b9743f1752e98e9' name='OverUnder|56a389aa660514383b9743f1752e98e9' value='Over|56a389aa660514383b9743f1752e98e9'>
             <label for='Over|56a389aa660514383b9743f1752e98e9'>Over 53.5</label><br>
             <input type='radio' id='Under|56a389aa660514383b9743f1752e98e9' name='OverUnder|56a389aa660514383b9743f1752e98e9' value='Under|56a389aa660514383b9743f1752e98e9'>
             <label for='Under|56a389aa660514383b9743f1752e98e9'>Under 53.5</label><br>
+            <input type='checkbox' id='OverUnder|56a389aa660514383b9743f1752e98e9' name='OverUnder|56a389aa660514383b9743f1752e98e9' value='OverUnder|56a389aa660514383b9743f1752e98e9'>
+            <label for='OverUnder|56a389aa660514383b9743f1752e98e9'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -625,12 +757,16 @@ font-size:25px;
             <label for='ATSAway|7061e228b14c45b516bebaec86a9d433'>San Jose State Spartans -1.0</label><br>
             <input type='radio' id='ATSHome|7061e228b14c45b516bebaec86a9d433' name='ATS|7061e228b14c45b516bebaec86a9d433' value='ATSHome|7061e228b14c45b516bebaec86a9d433'>
             <label for='ATSHome|7061e228b14c45b516bebaec86a9d433'>Colorado State Rams 1.0</label><br>
+            <input type='checkbox' id='ATSLock|7061e228b14c45b516bebaec86a9d433' name='ATSLock|7061e228b14c45b516bebaec86a9d433' value='ATSLock|7061e228b14c45b516bebaec86a9d433'>
+            <label for='ATSLock|7061e228b14c45b516bebaec86a9d433'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|7061e228b14c45b516bebaec86a9d433' name='OverUnder|7061e228b14c45b516bebaec86a9d433' value='Over|7061e228b14c45b516bebaec86a9d433'>
             <label for='Over|7061e228b14c45b516bebaec86a9d433'>Over 56.0</label><br>
             <input type='radio' id='Under|7061e228b14c45b516bebaec86a9d433' name='OverUnder|7061e228b14c45b516bebaec86a9d433' value='Under|7061e228b14c45b516bebaec86a9d433'>
             <label for='Under|7061e228b14c45b516bebaec86a9d433'>Under 56.0</label><br>
+            <input type='checkbox' id='OverUnder|7061e228b14c45b516bebaec86a9d433' name='OverUnder|7061e228b14c45b516bebaec86a9d433' value='OverUnder|7061e228b14c45b516bebaec86a9d433'>
+            <label for='OverUnder|7061e228b14c45b516bebaec86a9d433'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -642,12 +778,16 @@ font-size:25px;
             <label for='ATSAway|3335008c015ca3d292f851f7d614d404'>Southern Mississippi Golden Eagles 6.5</label><br>
             <input type='radio' id='ATSHome|3335008c015ca3d292f851f7d614d404' name='ATS|3335008c015ca3d292f851f7d614d404' value='ATSHome|3335008c015ca3d292f851f7d614d404'>
             <label for='ATSHome|3335008c015ca3d292f851f7d614d404'>UL Monroe Warhawks -6.5</label><br>
+            <input type='checkbox' id='ATSLock|3335008c015ca3d292f851f7d614d404' name='ATSLock|3335008c015ca3d292f851f7d614d404' value='ATSLock|3335008c015ca3d292f851f7d614d404'>
+            <label for='ATSLock|3335008c015ca3d292f851f7d614d404'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|3335008c015ca3d292f851f7d614d404' name='OverUnder|3335008c015ca3d292f851f7d614d404' value='Over|3335008c015ca3d292f851f7d614d404'>
             <label for='Over|3335008c015ca3d292f851f7d614d404'>Over 41.5</label><br>
             <input type='radio' id='Under|3335008c015ca3d292f851f7d614d404' name='OverUnder|3335008c015ca3d292f851f7d614d404' value='Under|3335008c015ca3d292f851f7d614d404'>
             <label for='Under|3335008c015ca3d292f851f7d614d404'>Under 41.5</label><br>
+            <input type='checkbox' id='OverUnder|3335008c015ca3d292f851f7d614d404' name='OverUnder|3335008c015ca3d292f851f7d614d404' value='OverUnder|3335008c015ca3d292f851f7d614d404'>
+            <label for='OverUnder|3335008c015ca3d292f851f7d614d404'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -659,12 +799,16 @@ font-size:25px;
             <label for='ATSAway|85f73ea34a56732c73cb3104611c7a46'>Arkansas State Red Wolves 14.5</label><br>
             <input type='radio' id='ATSHome|85f73ea34a56732c73cb3104611c7a46' name='ATS|85f73ea34a56732c73cb3104611c7a46' value='ATSHome|85f73ea34a56732c73cb3104611c7a46'>
             <label for='ATSHome|85f73ea34a56732c73cb3104611c7a46'>Texas State Bobcats -14.5</label><br>
+            <input type='checkbox' id='ATSLock|85f73ea34a56732c73cb3104611c7a46' name='ATSLock|85f73ea34a56732c73cb3104611c7a46' value='ATSLock|85f73ea34a56732c73cb3104611c7a46'>
+            <label for='ATSLock|85f73ea34a56732c73cb3104611c7a46'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|85f73ea34a56732c73cb3104611c7a46' name='OverUnder|85f73ea34a56732c73cb3104611c7a46' value='Over|85f73ea34a56732c73cb3104611c7a46'>
             <label for='Over|85f73ea34a56732c73cb3104611c7a46'>Over 64.0</label><br>
             <input type='radio' id='Under|85f73ea34a56732c73cb3104611c7a46' name='OverUnder|85f73ea34a56732c73cb3104611c7a46' value='Under|85f73ea34a56732c73cb3104611c7a46'>
             <label for='Under|85f73ea34a56732c73cb3104611c7a46'>Under 64.0</label><br>
+            <input type='checkbox' id='OverUnder|85f73ea34a56732c73cb3104611c7a46' name='OverUnder|85f73ea34a56732c73cb3104611c7a46' value='OverUnder|85f73ea34a56732c73cb3104611c7a46'>
+            <label for='OverUnder|85f73ea34a56732c73cb3104611c7a46'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -676,12 +820,16 @@ font-size:25px;
             <label for='ATSAway|17b46a19baf4a7b532a112b22ac49214'>Florida Gators 15.5</label><br>
             <input type='radio' id='ATSHome|17b46a19baf4a7b532a112b22ac49214' name='ATS|17b46a19baf4a7b532a112b22ac49214' value='ATSHome|17b46a19baf4a7b532a112b22ac49214'>
             <label for='ATSHome|17b46a19baf4a7b532a112b22ac49214'>Tennessee Volunteers -15.5</label><br>
+            <input type='checkbox' id='ATSLock|17b46a19baf4a7b532a112b22ac49214' name='ATSLock|17b46a19baf4a7b532a112b22ac49214' value='ATSLock|17b46a19baf4a7b532a112b22ac49214'>
+            <label for='ATSLock|17b46a19baf4a7b532a112b22ac49214'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|17b46a19baf4a7b532a112b22ac49214' name='OverUnder|17b46a19baf4a7b532a112b22ac49214' value='Over|17b46a19baf4a7b532a112b22ac49214'>
             <label for='Over|17b46a19baf4a7b532a112b22ac49214'>Over 55.5</label><br>
             <input type='radio' id='Under|17b46a19baf4a7b532a112b22ac49214' name='OverUnder|17b46a19baf4a7b532a112b22ac49214' value='Under|17b46a19baf4a7b532a112b22ac49214'>
             <label for='Under|17b46a19baf4a7b532a112b22ac49214'>Under 55.5</label><br>
+            <input type='checkbox' id='OverUnder|17b46a19baf4a7b532a112b22ac49214' name='OverUnder|17b46a19baf4a7b532a112b22ac49214' value='OverUnder|17b46a19baf4a7b532a112b22ac49214'>
+            <label for='OverUnder|17b46a19baf4a7b532a112b22ac49214'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -693,12 +841,16 @@ font-size:25px;
             <label for='ATSAway|b6fe5824d2af27a484cf57778caba402'>North Texas Mean Green -6.5</label><br>
             <input type='radio' id='ATSHome|b6fe5824d2af27a484cf57778caba402' name='ATS|b6fe5824d2af27a484cf57778caba402' value='ATSHome|b6fe5824d2af27a484cf57778caba402'>
             <label for='ATSHome|b6fe5824d2af27a484cf57778caba402'>Florida Atlantic Owls 6.5</label><br>
+            <input type='checkbox' id='ATSLock|b6fe5824d2af27a484cf57778caba402' name='ATSLock|b6fe5824d2af27a484cf57778caba402' value='ATSLock|b6fe5824d2af27a484cf57778caba402'>
+            <label for='ATSLock|b6fe5824d2af27a484cf57778caba402'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|b6fe5824d2af27a484cf57778caba402' name='OverUnder|b6fe5824d2af27a484cf57778caba402' value='Over|b6fe5824d2af27a484cf57778caba402'>
             <label for='Over|b6fe5824d2af27a484cf57778caba402'>Over 60.0</label><br>
             <input type='radio' id='Under|b6fe5824d2af27a484cf57778caba402' name='OverUnder|b6fe5824d2af27a484cf57778caba402' value='Under|b6fe5824d2af27a484cf57778caba402'>
             <label for='Under|b6fe5824d2af27a484cf57778caba402'>Under 60.0</label><br>
+            <input type='checkbox' id='OverUnder|b6fe5824d2af27a484cf57778caba402' name='OverUnder|b6fe5824d2af27a484cf57778caba402' value='OverUnder|b6fe5824d2af27a484cf57778caba402'>
+            <label for='OverUnder|b6fe5824d2af27a484cf57778caba402'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -710,12 +862,16 @@ font-size:25px;
             <label for='ATSAway|dd9354c4fff9229ee3d2553d38f8dd4a'>UTSA Roadrunners -6.0</label><br>
             <input type='radio' id='ATSHome|dd9354c4fff9229ee3d2553d38f8dd4a' name='ATS|dd9354c4fff9229ee3d2553d38f8dd4a' value='ATSHome|dd9354c4fff9229ee3d2553d38f8dd4a'>
             <label for='ATSHome|dd9354c4fff9229ee3d2553d38f8dd4a'>Rice Owls 6.0</label><br>
+            <input type='checkbox' id='ATSLock|dd9354c4fff9229ee3d2553d38f8dd4a' name='ATSLock|dd9354c4fff9229ee3d2553d38f8dd4a' value='ATSLock|dd9354c4fff9229ee3d2553d38f8dd4a'>
+            <label for='ATSLock|dd9354c4fff9229ee3d2553d38f8dd4a'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|dd9354c4fff9229ee3d2553d38f8dd4a' name='OverUnder|dd9354c4fff9229ee3d2553d38f8dd4a' value='Over|dd9354c4fff9229ee3d2553d38f8dd4a'>
             <label for='Over|dd9354c4fff9229ee3d2553d38f8dd4a'>Over 50.5</label><br>
             <input type='radio' id='Under|dd9354c4fff9229ee3d2553d38f8dd4a' name='OverUnder|dd9354c4fff9229ee3d2553d38f8dd4a' value='Under|dd9354c4fff9229ee3d2553d38f8dd4a'>
             <label for='Under|dd9354c4fff9229ee3d2553d38f8dd4a'>Under 50.5</label><br>
+            <input type='checkbox' id='OverUnder|dd9354c4fff9229ee3d2553d38f8dd4a' name='OverUnder|dd9354c4fff9229ee3d2553d38f8dd4a' value='OverUnder|dd9354c4fff9229ee3d2553d38f8dd4a'>
+            <label for='OverUnder|dd9354c4fff9229ee3d2553d38f8dd4a'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -727,12 +883,16 @@ font-size:25px;
             <label for='ATSAway|a56fbef38ac1d7c784d04e407f272905'>Washington State Cougars -3.5</label><br>
             <input type='radio' id='ATSHome|a56fbef38ac1d7c784d04e407f272905' name='ATS|a56fbef38ac1d7c784d04e407f272905' value='ATSHome|a56fbef38ac1d7c784d04e407f272905'>
             <label for='ATSHome|a56fbef38ac1d7c784d04e407f272905'>Fresno State Bulldogs 3.5</label><br>
+            <input type='checkbox' id='ATSLock|a56fbef38ac1d7c784d04e407f272905' name='ATSLock|a56fbef38ac1d7c784d04e407f272905' value='ATSLock|a56fbef38ac1d7c784d04e407f272905'>
+            <label for='ATSLock|a56fbef38ac1d7c784d04e407f272905'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|a56fbef38ac1d7c784d04e407f272905' name='OverUnder|a56fbef38ac1d7c784d04e407f272905' value='Over|a56fbef38ac1d7c784d04e407f272905'>
             <label for='Over|a56fbef38ac1d7c784d04e407f272905'>Over 61.5</label><br>
             <input type='radio' id='Under|a56fbef38ac1d7c784d04e407f272905' name='OverUnder|a56fbef38ac1d7c784d04e407f272905' value='Under|a56fbef38ac1d7c784d04e407f272905'>
             <label for='Under|a56fbef38ac1d7c784d04e407f272905'>Under 61.5</label><br>
+            <input type='checkbox' id='OverUnder|a56fbef38ac1d7c784d04e407f272905' name='OverUnder|a56fbef38ac1d7c784d04e407f272905' value='OverUnder|a56fbef38ac1d7c784d04e407f272905'>
+            <label for='OverUnder|a56fbef38ac1d7c784d04e407f272905'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -744,12 +904,16 @@ font-size:25px;
             <label for='ATSAway|4f365be3c3d4665f60e5f7550ea6fc05'>Appalachian State Mountaineers 10.5</label><br>
             <input type='radio' id='ATSHome|4f365be3c3d4665f60e5f7550ea6fc05' name='ATS|4f365be3c3d4665f60e5f7550ea6fc05' value='ATSHome|4f365be3c3d4665f60e5f7550ea6fc05'>
             <label for='ATSHome|4f365be3c3d4665f60e5f7550ea6fc05'>Louisiana Ragin Cajuns -10.5</label><br>
+            <input type='checkbox' id='ATSLock|4f365be3c3d4665f60e5f7550ea6fc05' name='ATSLock|4f365be3c3d4665f60e5f7550ea6fc05' value='ATSLock|4f365be3c3d4665f60e5f7550ea6fc05'>
+            <label for='ATSLock|4f365be3c3d4665f60e5f7550ea6fc05'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|4f365be3c3d4665f60e5f7550ea6fc05' name='OverUnder|4f365be3c3d4665f60e5f7550ea6fc05' value='Over|4f365be3c3d4665f60e5f7550ea6fc05'>
             <label for='Over|4f365be3c3d4665f60e5f7550ea6fc05'>Over 65.0</label><br>
             <input type='radio' id='Under|4f365be3c3d4665f60e5f7550ea6fc05' name='OverUnder|4f365be3c3d4665f60e5f7550ea6fc05' value='Under|4f365be3c3d4665f60e5f7550ea6fc05'>
             <label for='Under|4f365be3c3d4665f60e5f7550ea6fc05'>Under 65.0</label><br>
+            <input type='checkbox' id='OverUnder|4f365be3c3d4665f60e5f7550ea6fc05' name='OverUnder|4f365be3c3d4665f60e5f7550ea6fc05' value='OverUnder|4f365be3c3d4665f60e5f7550ea6fc05'>
+            <label for='OverUnder|4f365be3c3d4665f60e5f7550ea6fc05'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -761,12 +925,16 @@ font-size:25px;
             <label for='ATSAway|3e401f110827c69c08fdcd237d08bdb9'>Ohio State Buckeyes -3.5</label><br>
             <input type='radio' id='ATSHome|3e401f110827c69c08fdcd237d08bdb9' name='ATS|3e401f110827c69c08fdcd237d08bdb9' value='ATSHome|3e401f110827c69c08fdcd237d08bdb9'>
             <label for='ATSHome|3e401f110827c69c08fdcd237d08bdb9'>Oregon Ducks 3.5</label><br>
+            <input type='checkbox' id='ATSLock|3e401f110827c69c08fdcd237d08bdb9' name='ATSLock|3e401f110827c69c08fdcd237d08bdb9' value='ATSLock|3e401f110827c69c08fdcd237d08bdb9'>
+            <label for='ATSLock|3e401f110827c69c08fdcd237d08bdb9'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|3e401f110827c69c08fdcd237d08bdb9' name='OverUnder|3e401f110827c69c08fdcd237d08bdb9' value='Over|3e401f110827c69c08fdcd237d08bdb9'>
             <label for='Over|3e401f110827c69c08fdcd237d08bdb9'>Over 53.5</label><br>
             <input type='radio' id='Under|3e401f110827c69c08fdcd237d08bdb9' name='OverUnder|3e401f110827c69c08fdcd237d08bdb9' value='Under|3e401f110827c69c08fdcd237d08bdb9'>
             <label for='Under|3e401f110827c69c08fdcd237d08bdb9'>Under 53.5</label><br>
+            <input type='checkbox' id='OverUnder|3e401f110827c69c08fdcd237d08bdb9' name='OverUnder|3e401f110827c69c08fdcd237d08bdb9' value='OverUnder|3e401f110827c69c08fdcd237d08bdb9'>
+            <label for='OverUnder|3e401f110827c69c08fdcd237d08bdb9'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -778,12 +946,16 @@ font-size:25px;
             <label for='ATSAway|70fc99b8141b073b2ca8d5c22335a377'>Ole Miss Rebels -3.5</label><br>
             <input type='radio' id='ATSHome|70fc99b8141b073b2ca8d5c22335a377' name='ATS|70fc99b8141b073b2ca8d5c22335a377' value='ATSHome|70fc99b8141b073b2ca8d5c22335a377'>
             <label for='ATSHome|70fc99b8141b073b2ca8d5c22335a377'>LSU Tigers 3.5</label><br>
+            <input type='checkbox' id='ATSLock|70fc99b8141b073b2ca8d5c22335a377' name='ATSLock|70fc99b8141b073b2ca8d5c22335a377' value='ATSLock|70fc99b8141b073b2ca8d5c22335a377'>
+            <label for='ATSLock|70fc99b8141b073b2ca8d5c22335a377'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|70fc99b8141b073b2ca8d5c22335a377' name='OverUnder|70fc99b8141b073b2ca8d5c22335a377' value='Over|70fc99b8141b073b2ca8d5c22335a377'>
             <label for='Over|70fc99b8141b073b2ca8d5c22335a377'>Over 64.0</label><br>
             <input type='radio' id='Under|70fc99b8141b073b2ca8d5c22335a377' name='OverUnder|70fc99b8141b073b2ca8d5c22335a377' value='Under|70fc99b8141b073b2ca8d5c22335a377'>
             <label for='Under|70fc99b8141b073b2ca8d5c22335a377'>Under 64.0</label><br>
+            <input type='checkbox' id='OverUnder|70fc99b8141b073b2ca8d5c22335a377' name='OverUnder|70fc99b8141b073b2ca8d5c22335a377' value='OverUnder|70fc99b8141b073b2ca8d5c22335a377'>
+            <label for='OverUnder|70fc99b8141b073b2ca8d5c22335a377'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -795,12 +967,16 @@ font-size:25px;
             <label for='ATSAway|1311afa1b07108fbd223653f9f813d46'>Oregon State Beavers -4.0</label><br>
             <input type='radio' id='ATSHome|1311afa1b07108fbd223653f9f813d46' name='ATS|1311afa1b07108fbd223653f9f813d46' value='ATSHome|1311afa1b07108fbd223653f9f813d46'>
             <label for='ATSHome|1311afa1b07108fbd223653f9f813d46'>Nevada Wolf Pack 4.0</label><br>
+            <input type='checkbox' id='ATSLock|1311afa1b07108fbd223653f9f813d46' name='ATSLock|1311afa1b07108fbd223653f9f813d46' value='ATSLock|1311afa1b07108fbd223653f9f813d46'>
+            <label for='ATSLock|1311afa1b07108fbd223653f9f813d46'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|1311afa1b07108fbd223653f9f813d46' name='OverUnder|1311afa1b07108fbd223653f9f813d46' value='Over|1311afa1b07108fbd223653f9f813d46'>
             <label for='Over|1311afa1b07108fbd223653f9f813d46'>Over 48.0</label><br>
             <input type='radio' id='Under|1311afa1b07108fbd223653f9f813d46' name='OverUnder|1311afa1b07108fbd223653f9f813d46' value='Under|1311afa1b07108fbd223653f9f813d46'>
             <label for='Under|1311afa1b07108fbd223653f9f813d46'>Under 48.0</label><br>
+            <input type='checkbox' id='OverUnder|1311afa1b07108fbd223653f9f813d46' name='OverUnder|1311afa1b07108fbd223653f9f813d46' value='OverUnder|1311afa1b07108fbd223653f9f813d46'>
+            <label for='OverUnder|1311afa1b07108fbd223653f9f813d46'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -812,12 +988,16 @@ font-size:25px;
             <label for='ATSAway|d278f47b052f215ce68c6749c83d0bfd'>Vanderbilt Commodores 13.5</label><br>
             <input type='radio' id='ATSHome|d278f47b052f215ce68c6749c83d0bfd' name='ATS|d278f47b052f215ce68c6749c83d0bfd' value='ATSHome|d278f47b052f215ce68c6749c83d0bfd'>
             <label for='ATSHome|d278f47b052f215ce68c6749c83d0bfd'>Kentucky Wildcats -13.5</label><br>
+            <input type='checkbox' id='ATSLock|d278f47b052f215ce68c6749c83d0bfd' name='ATSLock|d278f47b052f215ce68c6749c83d0bfd' value='ATSLock|d278f47b052f215ce68c6749c83d0bfd'>
+            <label for='ATSLock|d278f47b052f215ce68c6749c83d0bfd'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|d278f47b052f215ce68c6749c83d0bfd' name='OverUnder|d278f47b052f215ce68c6749c83d0bfd' value='Over|d278f47b052f215ce68c6749c83d0bfd'>
             <label for='Over|d278f47b052f215ce68c6749c83d0bfd'>Over 46.0</label><br>
             <input type='radio' id='Under|d278f47b052f215ce68c6749c83d0bfd' name='OverUnder|d278f47b052f215ce68c6749c83d0bfd' value='Under|d278f47b052f215ce68c6749c83d0bfd'>
             <label for='Under|d278f47b052f215ce68c6749c83d0bfd'>Under 46.0</label><br>
+            <input type='checkbox' id='OverUnder|d278f47b052f215ce68c6749c83d0bfd' name='OverUnder|d278f47b052f215ce68c6749c83d0bfd' value='OverUnder|d278f47b052f215ce68c6749c83d0bfd'>
+            <label for='OverUnder|d278f47b052f215ce68c6749c83d0bfd'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -829,12 +1009,16 @@ font-size:25px;
             <label for='ATSAway|d8287f3cf3dd5601a73877ab8edde386'>Air Force Falcons 6.5</label><br>
             <input type='radio' id='ATSHome|d8287f3cf3dd5601a73877ab8edde386' name='ATS|d8287f3cf3dd5601a73877ab8edde386' value='ATSHome|d8287f3cf3dd5601a73877ab8edde386'>
             <label for='ATSHome|d8287f3cf3dd5601a73877ab8edde386'>New Mexico Lobos -6.5</label><br>
+            <input type='checkbox' id='ATSLock|d8287f3cf3dd5601a73877ab8edde386' name='ATSLock|d8287f3cf3dd5601a73877ab8edde386' value='ATSLock|d8287f3cf3dd5601a73877ab8edde386'>
+            <label for='ATSLock|d8287f3cf3dd5601a73877ab8edde386'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|d8287f3cf3dd5601a73877ab8edde386' name='OverUnder|d8287f3cf3dd5601a73877ab8edde386' value='Over|d8287f3cf3dd5601a73877ab8edde386'>
             <label for='Over|d8287f3cf3dd5601a73877ab8edde386'>Over 54.0</label><br>
             <input type='radio' id='Under|d8287f3cf3dd5601a73877ab8edde386' name='OverUnder|d8287f3cf3dd5601a73877ab8edde386' value='Under|d8287f3cf3dd5601a73877ab8edde386'>
             <label for='Under|d8287f3cf3dd5601a73877ab8edde386'>Under 54.0</label><br>
+            <input type='checkbox' id='OverUnder|d8287f3cf3dd5601a73877ab8edde386' name='OverUnder|d8287f3cf3dd5601a73877ab8edde386' value='OverUnder|d8287f3cf3dd5601a73877ab8edde386'>
+            <label for='OverUnder|d8287f3cf3dd5601a73877ab8edde386'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -846,12 +1030,16 @@ font-size:25px;
             <label for='ATSAway|1de2ab366110ceaa624051c3872e3979'>Iowa State Cyclones -3.0</label><br>
             <input type='radio' id='ATSHome|1de2ab366110ceaa624051c3872e3979' name='ATS|1de2ab366110ceaa624051c3872e3979' value='ATSHome|1de2ab366110ceaa624051c3872e3979'>
             <label for='ATSHome|1de2ab366110ceaa624051c3872e3979'>West Virginia Mountaineers 3.0</label><br>
+            <input type='checkbox' id='ATSLock|1de2ab366110ceaa624051c3872e3979' name='ATSLock|1de2ab366110ceaa624051c3872e3979' value='ATSLock|1de2ab366110ceaa624051c3872e3979'>
+            <label for='ATSLock|1de2ab366110ceaa624051c3872e3979'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|1de2ab366110ceaa624051c3872e3979' name='OverUnder|1de2ab366110ceaa624051c3872e3979' value='Over|1de2ab366110ceaa624051c3872e3979'>
             <label for='Over|1de2ab366110ceaa624051c3872e3979'>Over 53.0</label><br>
             <input type='radio' id='Under|1de2ab366110ceaa624051c3872e3979' name='OverUnder|1de2ab366110ceaa624051c3872e3979' value='Under|1de2ab366110ceaa624051c3872e3979'>
             <label for='Under|1de2ab366110ceaa624051c3872e3979'>Under 53.0</label><br>
+            <input type='checkbox' id='OverUnder|1de2ab366110ceaa624051c3872e3979' name='OverUnder|1de2ab366110ceaa624051c3872e3979' value='OverUnder|1de2ab366110ceaa624051c3872e3979'>
+            <label for='OverUnder|1de2ab366110ceaa624051c3872e3979'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -863,12 +1051,16 @@ font-size:25px;
             <label for='ATSAway|0da1d813bcd901acf66dc4697ccce504'>Marshall Thundering Herd -2.0</label><br>
             <input type='radio' id='ATSHome|0da1d813bcd901acf66dc4697ccce504' name='ATS|0da1d813bcd901acf66dc4697ccce504' value='ATSHome|0da1d813bcd901acf66dc4697ccce504'>
             <label for='ATSHome|0da1d813bcd901acf66dc4697ccce504'>Georgia Southern Eagles 2.0</label><br>
+            <input type='checkbox' id='ATSLock|0da1d813bcd901acf66dc4697ccce504' name='ATSLock|0da1d813bcd901acf66dc4697ccce504' value='ATSLock|0da1d813bcd901acf66dc4697ccce504'>
+            <label for='ATSLock|0da1d813bcd901acf66dc4697ccce504'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|0da1d813bcd901acf66dc4697ccce504' name='OverUnder|0da1d813bcd901acf66dc4697ccce504' value='Over|0da1d813bcd901acf66dc4697ccce504'>
             <label for='Over|0da1d813bcd901acf66dc4697ccce504'>Over 61.5</label><br>
             <input type='radio' id='Under|0da1d813bcd901acf66dc4697ccce504' name='OverUnder|0da1d813bcd901acf66dc4697ccce504' value='Under|0da1d813bcd901acf66dc4697ccce504'>
             <label for='Under|0da1d813bcd901acf66dc4697ccce504'>Under 61.5</label><br>
+            <input type='checkbox' id='OverUnder|0da1d813bcd901acf66dc4697ccce504' name='OverUnder|0da1d813bcd901acf66dc4697ccce504' value='OverUnder|0da1d813bcd901acf66dc4697ccce504'>
+            <label for='OverUnder|0da1d813bcd901acf66dc4697ccce504'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -880,12 +1072,16 @@ font-size:25px;
             <label for='ATSAway|ffc93203d210a48251be2b3704f31a51'>Syracuse Orange -4.5</label><br>
             <input type='radio' id='ATSHome|ffc93203d210a48251be2b3704f31a51' name='ATS|ffc93203d210a48251be2b3704f31a51' value='ATSHome|ffc93203d210a48251be2b3704f31a51'>
             <label for='ATSHome|ffc93203d210a48251be2b3704f31a51'>NC State Wolfpack 4.5</label><br>
+            <input type='checkbox' id='ATSLock|ffc93203d210a48251be2b3704f31a51' name='ATSLock|ffc93203d210a48251be2b3704f31a51' value='ATSLock|ffc93203d210a48251be2b3704f31a51'>
+            <label for='ATSLock|ffc93203d210a48251be2b3704f31a51'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|ffc93203d210a48251be2b3704f31a51' name='OverUnder|ffc93203d210a48251be2b3704f31a51' value='Over|ffc93203d210a48251be2b3704f31a51'>
             <label for='Over|ffc93203d210a48251be2b3704f31a51'>Over 55.0</label><br>
             <input type='radio' id='Under|ffc93203d210a48251be2b3704f31a51' name='OverUnder|ffc93203d210a48251be2b3704f31a51' value='Under|ffc93203d210a48251be2b3704f31a51'>
             <label for='Under|ffc93203d210a48251be2b3704f31a51'>Under 55.0</label><br>
+            <input type='checkbox' id='OverUnder|ffc93203d210a48251be2b3704f31a51' name='OverUnder|ffc93203d210a48251be2b3704f31a51' value='OverUnder|ffc93203d210a48251be2b3704f31a51'>
+            <label for='OverUnder|ffc93203d210a48251be2b3704f31a51'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -897,12 +1093,16 @@ font-size:25px;
             <label for='ATSAway|34544ca5e9aac17280fd757e1eb0f9c8'>Minnesota Golden Gophers -5.5</label><br>
             <input type='radio' id='ATSHome|34544ca5e9aac17280fd757e1eb0f9c8' name='ATS|34544ca5e9aac17280fd757e1eb0f9c8' value='ATSHome|34544ca5e9aac17280fd757e1eb0f9c8'>
             <label for='ATSHome|34544ca5e9aac17280fd757e1eb0f9c8'>UCLA Bruins 5.5</label><br>
+            <input type='checkbox' id='ATSLock|34544ca5e9aac17280fd757e1eb0f9c8' name='ATSLock|34544ca5e9aac17280fd757e1eb0f9c8' value='ATSLock|34544ca5e9aac17280fd757e1eb0f9c8'>
+            <label for='ATSLock|34544ca5e9aac17280fd757e1eb0f9c8'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|34544ca5e9aac17280fd757e1eb0f9c8' name='OverUnder|34544ca5e9aac17280fd757e1eb0f9c8' value='Over|34544ca5e9aac17280fd757e1eb0f9c8'>
             <label for='Over|34544ca5e9aac17280fd757e1eb0f9c8'>Over 40.5</label><br>
             <input type='radio' id='Under|34544ca5e9aac17280fd757e1eb0f9c8' name='OverUnder|34544ca5e9aac17280fd757e1eb0f9c8' value='Under|34544ca5e9aac17280fd757e1eb0f9c8'>
             <label for='Under|34544ca5e9aac17280fd757e1eb0f9c8'>Under 40.5</label><br>
+            <input type='checkbox' id='OverUnder|34544ca5e9aac17280fd757e1eb0f9c8' name='OverUnder|34544ca5e9aac17280fd757e1eb0f9c8' value='OverUnder|34544ca5e9aac17280fd757e1eb0f9c8'>
+            <label for='OverUnder|34544ca5e9aac17280fd757e1eb0f9c8'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -914,12 +1114,16 @@ font-size:25px;
             <label for='ATSAway|81da56712c879ebb7c1d76ae01b443cd'>Kansas State Wildcats -4.0</label><br>
             <input type='radio' id='ATSHome|81da56712c879ebb7c1d76ae01b443cd' name='ATS|81da56712c879ebb7c1d76ae01b443cd' value='ATSHome|81da56712c879ebb7c1d76ae01b443cd'>
             <label for='ATSHome|81da56712c879ebb7c1d76ae01b443cd'>Colorado Buffaloes 4.0</label><br>
+            <input type='checkbox' id='ATSLock|81da56712c879ebb7c1d76ae01b443cd' name='ATSLock|81da56712c879ebb7c1d76ae01b443cd' value='ATSLock|81da56712c879ebb7c1d76ae01b443cd'>
+            <label for='ATSLock|81da56712c879ebb7c1d76ae01b443cd'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|81da56712c879ebb7c1d76ae01b443cd' name='OverUnder|81da56712c879ebb7c1d76ae01b443cd' value='Over|81da56712c879ebb7c1d76ae01b443cd'>
             <label for='Over|81da56712c879ebb7c1d76ae01b443cd'>Over 56.5</label><br>
             <input type='radio' id='Under|81da56712c879ebb7c1d76ae01b443cd' name='OverUnder|81da56712c879ebb7c1d76ae01b443cd' value='Under|81da56712c879ebb7c1d76ae01b443cd'>
             <label for='Under|81da56712c879ebb7c1d76ae01b443cd'>Under 56.5</label><br>
+            <input type='checkbox' id='OverUnder|81da56712c879ebb7c1d76ae01b443cd' name='OverUnder|81da56712c879ebb7c1d76ae01b443cd' value='OverUnder|81da56712c879ebb7c1d76ae01b443cd'>
+            <label for='OverUnder|81da56712c879ebb7c1d76ae01b443cd'>Lock</label><br>
        </td>
    </tr>
    <tr>
@@ -931,12 +1135,16 @@ font-size:25px;
             <label for='ATSAway|c16e38af3311a719b9f56e192feed0fd'>Boise State Broncos -20.5</label><br>
             <input type='radio' id='ATSHome|c16e38af3311a719b9f56e192feed0fd' name='ATS|c16e38af3311a719b9f56e192feed0fd' value='ATSHome|c16e38af3311a719b9f56e192feed0fd'>
             <label for='ATSHome|c16e38af3311a719b9f56e192feed0fd'>Hawaii Rainbow Warriors 20.5</label><br>
+            <input type='checkbox' id='ATSLock|c16e38af3311a719b9f56e192feed0fd' name='ATSLock|c16e38af3311a719b9f56e192feed0fd' value='ATSLock|c16e38af3311a719b9f56e192feed0fd'>
+            <label for='ATSLock|c16e38af3311a719b9f56e192feed0fd'>Lock</label><br>
        </td>
        <td style='text-align:left'>
             <input type='radio' id='Over|c16e38af3311a719b9f56e192feed0fd' name='OverUnder|c16e38af3311a719b9f56e192feed0fd' value='Over|c16e38af3311a719b9f56e192feed0fd'>
             <label for='Over|c16e38af3311a719b9f56e192feed0fd'>Over 61.0</label><br>
             <input type='radio' id='Under|c16e38af3311a719b9f56e192feed0fd' name='OverUnder|c16e38af3311a719b9f56e192feed0fd' value='Under|c16e38af3311a719b9f56e192feed0fd'>
             <label for='Under|c16e38af3311a719b9f56e192feed0fd'>Under 61.0</label><br>
+            <input type='checkbox' id='OverUnder|c16e38af3311a719b9f56e192feed0fd' name='OverUnder|c16e38af3311a719b9f56e192feed0fd' value='OverUnder|c16e38af3311a719b9f56e192feed0fd'>
+            <label for='OverUnder|c16e38af3311a719b9f56e192feed0fd'>Lock</label><br>
        </td>
    </tr>
 </table>
